@@ -43,8 +43,8 @@ tasks.addEventListener("click", function(e){
            trg.classList.remove("complete")
         }
         trg.removeAttribute("readonly")
-        e.target.innerHTML = "save"
-    } else if(e.target.innerHTML === "save"){
+        e.target.innerHTML = "SAVE"
+    } else if(e.target.innerHTML === "SAVE"){
         let trg = e.target.parentNode.firstChild
         trg.setAttribute("readonly", true)
         e.target.innerHTML = "EDIT"
@@ -60,7 +60,7 @@ tasks.addEventListener("click", function(e){
         (e.target.parentNode.firstChild).classList.remove("complete")
         e.target.innerHTML = "COMPLETE"
         let trg = e.target.parentNode.firstChild
-        e.target.parentNode.childNodes[2].innerHTML = "save"
+        e.target.parentNode.childNodes[2].innerHTML = "SAVE"
         trg.removeAttribute("readonly")
     }
 
