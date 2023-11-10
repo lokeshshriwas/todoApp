@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Playpen Sans', cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    color: white;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+header{
+    height: 80vh;
+    width: 80vw;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+form{
+    height: 4vw;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(55, 54, 54);
+    padding: 0px 20px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 100px;
+}
+
+#input{
+    height: 2.5vw;
+    width: 73%;
+    font-size: 1.5vw;
+    border-radius: 100px;
+    padding: 0px 10px;
+
+}
+
+#btn{
+    height: 60%;
+    border: none;
+    width: 20%;
+    border-radius: 100px;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-right: 1vw;
+}
+
+.task-container{
+    height: 80%;
+    width: 80%;
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    scrollbar-width: none;
+    box-shadow: 0px 0px 10px rgb(9, 9, 9);
+}
+
+.tasks{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task{
+    background-color: #212121;
+    height: 2.5vw;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    padding: 0vw 1.5vw 0vw 1.5vw;
+}
+
+.task input{
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    padding: 0rem 1vw;
+    font-size: 1.2vw;
+    background-color: #212121;
+    color: white;
+    border: none;
+    font-weight: 500;
+    margin-right: 2vw;
+}
+
+.task input:hover{
+    background-color: #545454;
+    transition: all linear 0.3s;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.task button{
+    border: none;
+    background-color: #212121;
+    color: white;   
+    font-size: 1vw;
+    margin-right: 8px;
+}
+
+.task :nth-child(2){
+    color: red;
+}
+
+.task :nth-child(3){
+    color: yellow;
+}
+
+.task :nth-child(4){
+    color: rgb(77, 255, 0);
+}
+
+@media (max-width: 900px){
+
+    h1{
+        margin-bottom: 20px;
+    }
+    
+    header{
+        height: 80vh;
+        width: 95vw;
+        background-color: #212121;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    form{
+        height: 10vw;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(55, 54, 54);
+        padding: 0px 20px;
+        margin: 10px 0px 20px 0px;
+        border-radius: 100px;
+    }
+    
+    #input{
+        height: 5vw;
+        width: 73%;
+        font-size: 2vw;
+        border-radius: 100px;
+        padding: 0vw 1vw;
+    
+    }
+    
+    #btn{
+        height: 60%;
+        border: none;
+        width: 20%;
+        border-radius: 100px;
+        font-size: 2vw;
+        font-weight: 700;
+        margin-left: 2vw;
+    }
+    
+    .task-container{
+        height: 80%;
+        width: 90%;
+        background-color: #1c1c1c;
+        border-radius: 2vw;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+        scrollbar-width: none;
+        box-shadow: 0px 0px 10px rgb(9, 9, 9);
+    }
+    
+    .tasks{
+        height: 100%;
+        width: 100%;
+        margin-top: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .task{
+        background-color: #212121;
+        height: 8vw;
+        width: 90%;
+        overflow: hidden;
+        border-radius: 100px;
+        margin-top: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: o.3vw;
+        padding: 0vw 1.5vw 0vw 1.5vw;
+    }
+    
+    .task input{
+        width: 70%;
+        height: 70%;
+        border-radius: .5vw;
+        padding: 0rem 1vw;
+        font-size: 3vw;
+        background-color: #212121;
+        color: white;
+        border: none;
+        font-weight: 500;
+        margin-right: 2vw;
+    }
+    
+    .task button{
+        border: none;
+        background-color: #212121;
+        color: white;   
+        font-size: 2vw;
+        margin-right: 1vw;
+    }
+}
